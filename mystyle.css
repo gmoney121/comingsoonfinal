@@ -1,0 +1,110 @@
+/* FONTS ************************************/
+@font-face {
+	font-family: marker;
+	src: url(fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+	font-family: reggae;
+	src: url(fonts/ReggaeOne-Regular.ttf);
+}
+@font-face {
+	font-family: sat;
+	src: url(fonts/Satisfy-Regular.ttf);
+}
+/**********************************************/
+
+body {
+	display: flex;
+	  justify-content: center;
+ background-color: #fffbd9;
+}
+
+h1 {
+	font-family: marker;
+}
+
+p {
+	display: flex;
+	justify-content: center;
+	font-family: marker;
+	text-align: center;
+	font-size: 90px;
+	padding: 15px;
+	margin-bottom: 2px;
+}
+#container{
+	position: relative;
+	top: 100px;
+	width: 800px;
+}
+
+#hero-image {
+display: flex;
+justify-content: center;
+}
+
+#hero-image img {
+	width: 250px;
+	height: 500px;
+}
+
+#content-box{
+	background: #FFF;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+a {
+	font-family: reggae;
+	text-decoration: none;
+	padding: 5px;
+	color: black;
+}
+a:hover{
+	background: #ccc;
+	color: white;
+}
+
+#slider {
+	overflow: hidden;
+}
+	#slider figure {
+		position: relative;
+		width: 500%;
+		margin: 0;
+		left: 0;
+		animation: 20s slider infinite;
+}
+#slider figure img {
+		width: 20%;
+		float: left;
+}
+
+@keyframes slider {
+		0% {
+			left: 0;
+		}
+		20% {
+			left: 0;
+		}
+		25% {
+			left: -100%;
+		}
+		45% {
+			left: -100%;
+		}
+		50% {
+			left: -200%;
+		}
+		70% {
+			left: -200%;
+		}
+		75% {
+			left: -300%;
+		}
+		95% {
+			left: -300%;
+		}
+		100% {
+			left: -400%;
+		}
